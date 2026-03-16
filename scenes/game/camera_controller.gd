@@ -26,6 +26,7 @@ func _ready() -> void:
 	_camera = Camera3D.new()
 	_camera.name = "Camera3D"
 	_camera.position = Vector3(0, 0, initial_zoom)
+	_camera.current = true
 	_pivot.add_child(_camera)
 
 	_pivot.rotation_degrees.x = initial_tilt_deg

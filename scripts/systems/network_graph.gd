@@ -99,7 +99,7 @@ func find_nearest_hub(world_position: Vector3, max_radius: float = 50.0):
 	var nearest = null
 	var nearest_dist := max_radius * max_radius
 	for hub in all_hubs:
-		var dist_sq := hub.global_position.distance_squared_to(world_position)
+		var dist_sq: float = hub.global_position.distance_squared_to(world_position)
 		if dist_sq < nearest_dist:
 			nearest_dist = dist_sq
 			nearest = hub
