@@ -125,7 +125,7 @@ func _finalize_slope() -> void:
 			end_hub.connected_slope_arrivals.append(slope)
 
 	slope._setup()
-	var cost := slope.construction_cost
+	var cost: float = slope.construction_cost
 	EconomyManager.purchase(cost, "Construction piste " + slope.slope_name)
 
 	emit_signal("construction_completed", slope)
@@ -177,9 +177,9 @@ func _create_lift(start_hub, end_hub) -> void:
 	end_hub.connected_lift_arrivals.append(lift)
 
 	lift._setup()
-	var length := start_hub.global_position.distance_to(end_hub.global_position)
+	var length: float = start_hub.global_position.distance_to(end_hub.global_position)
 	var cost_per_m: float = lift.LIFT_CONFIG[selected_lift_type]["cost_per_m"]
-	var total_cost := length * cost_per_m
+	var total_cost: float = length * cost_per_m
 
 	if not EconomyManager.purchase(total_cost, "Construction remontée"):
 		push_warning("BuildManager: insufficient funds for lift")

@@ -63,8 +63,8 @@ func _generate() -> void:
 	var valley_z_norm := VALLEY_CENTER_Z / TERRAIN_SIZE * res
 	for z in range(res):
 		for x in range(res):
-			var z_world := float(z) / res * TERRAIN_SIZE
-			var dist_to_valley := abs(z_world - VALLEY_CENTER_Z)
+			var z_world: float = float(z) / res * TERRAIN_SIZE
+			var dist_to_valley: float = abs(z_world - VALLEY_CENTER_Z)
 			if dist_to_valley < VALLEY_WIDTH * 2.5:
 				var t := clampf(1.0 - dist_to_valley / (VALLEY_WIDTH * 2.5), 0.0, 1.0)
 				t = t * t  # smooth
@@ -121,13 +121,13 @@ func _generate() -> void:
 
 
 func _add_col(s1: Array, s2: Array, col_height: float, res: int) -> void:
-	var mx := (s1[0] + s2[0]) / 2.0
-	var mz := (s1[1] + s2[1]) / 2.0
+	var mx: float = (float(s1[0]) + float(s2[0])) / 2.0
+	var mz: float = (float(s1[1]) + float(s2[1])) / 2.0
 	var sigma := 30.0
 	for z in range(res):
 		for x in range(res):
-			var dx := float(x) - mx
-			var dz := float(z) - mz
+			var dx: float = float(x) - mx
+			var dz: float = float(z) - mz
 			var g := exp(-(dx * dx + dz * dz) / (2.0 * sigma * sigma))
 			var idx := z * res + x
 			if g > 0.05:
