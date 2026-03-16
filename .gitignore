@@ -1,0 +1,13 @@
+# Godot 4
+.godot/
+*.import
+export_presets.cfg
+*.translation
+
+# Lanceur
+launcher/godot_path.txt
+
+# OS
+.DS_Store
+Thumbs.db
+*.tmp
