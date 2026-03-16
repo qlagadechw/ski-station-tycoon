@@ -1,0 +1,117 @@
+SCRIPT ERROR: Parse Error: Cannot infer the type of "dist_sq" variable because the value doesn't have a set type.
+          at: GDScript::reload (res://scripts/systems/network_graph.gd:102)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+          at: GDScript::reload (res://scripts/autoload/economy_manager.gd:0)
+ERROR: Failed to load script "res://scripts/autoload/economy_manager.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript.cpp:2907)
+ERROR: Failed to instantiate an autoload, script 'res://scripts/systems/network_graph.gd' does not inherit from 'Node'.
+   at: (main/main.cpp:4407)
+SCRIPT ERROR: Parse Error: Cannot infer the type of "cost" variable because the value doesn't have a set type.
+          at: GDScript::reload (res://scripts/autoload/build_manager.gd:128)
+SCRIPT ERROR: Parse Error: Cannot infer the type of "length" variable because the value doesn't have a set type.
+          at: GDScript::reload (res://scripts/autoload/build_manager.gd:180)
+SCRIPT ERROR: Parse Error: Cannot infer the type of "total_cost" variable because the value doesn't have a set type.
+          at: GDScript::reload (res://scripts/autoload/build_manager.gd:182)
+ERROR: Failed to load script "res://scripts/autoload/build_manager.gd" with error "Parse error".
+   at: load (modules/gdscript/gdscript.cpp:2907)
+ERROR: Failed to instantiate an autoload, script 'res://scripts/autoload/build_manager.gd' does not inherit from 'Node'.
+   at: (main/main.cpp:4407)
+SCRIPT ERROR: Parse Error: Cannot infer the type of "mx" variable because the value doesn't have a set type.
+          at: GDScript::reload (res://scenes/terrain/terrain_generator.gd:124)
+          GDScript backtrace (most recent call first):
+              [0] _setup_terrain (res://scenes/game/game_world.gd:57)
+              [1] _ready (res://scenes/game/game_world.gd:9)
+SCRIPT ERROR: Parse Error: Cannot infer the type of "mz" variable because the value doesn't have a set type.
+          at: GDScript::reload (res://scenes/terrain/terrain_generator.gd:125)
+          GDScript backtrace (most recent call first):
+              [0] _setup_terrain (res://scenes/game/game_world.gd:57)
+              [1] _ready (res://scenes/game/game_world.gd:9)
+SCRIPT ERROR: Parse Error: Cannot infer the type of "dx" variable because the value doesn't have a set type.
+          at: GDScript::reload (res://scenes/terrain/terrain_generator.gd:129)
+          GDScript backtrace (most recent call first):
+              [0] _setup_terrain (res://scenes/game/game_world.gd:57)
+              [1] _ready (res://scenes/game/game_world.gd:9)
+SCRIPT ERROR: Parse Error: Cannot infer the type of "dz" variable because the value doesn't have a set type.
+          at: GDScript::reload (res://scenes/terrain/terrain_generator.gd:130)
+          GDScript backtrace (most recent call first):
+              [0] _setup_terrain (res://scenes/game/game_world.gd:57)
+              [1] _ready (res://scenes/game/game_world.gd:9)
+SCRIPT ERROR: Parse Error: The variable type is being inferred from a Variant value, so it will be typed as Variant. (Warning treated as error.)
+          at: GDScript::reload (res://scenes/terrain/terrain_generator.gd:67)
+          GDScript backtrace (most recent call first):
+              [0] _setup_terrain (res://scenes/game/game_world.gd:57)
+              [1] _ready (res://scenes/game/game_world.gd:9)
+ERROR: Failed to load script "res://scenes/terrain/terrain_generator.gd" with error "Parse error".
+   at: load (modules/gdscript/gdscript.cpp:2907)
+   GDScript backtrace (most recent call first):
+       [0] _setup_terrain (res://scenes/game/game_world.gd:57)
+       [1] _ready (res://scenes/game/game_world.gd:9)
+SCRIPT ERROR: Invalid call. Nonexistent function 'new' in base 'GDScript'.
+          at: _setup_terrain (res://scenes/game/game_world.gd:61)
+          GDScript backtrace (most recent call first):
+              [0] _setup_terrain (res://scenes/game/game_world.gd:61)
+              [1] _ready (res://scenes/game/game_world.gd:9)
+SCRIPT ERROR: Invalid call. Nonexistent function 'register_hub' in base 'Nil'.
+          at: Hub._ready (res://scenes/infrastructure/hub.gd:24)
+          GDScript backtrace (most recent call first):
+              [0] _ready (res://scenes/infrastructure/hub.gd:24)
+              [1] _add_default_hub (res://scenes/terrain/village.gd:157)
+              [2] _build_village (res://scenes/terrain/village.gd:23)
+              [3] _ready (res://scenes/terrain/village.gd:11)
+              [4] _setup_village (res://scenes/game/game_world.gd:73)
+              [5] _ready (res://scenes/game/game_world.gd:10)
+SCRIPT ERROR: Parse Error: Cannot infer the type of "delta" variable because the value doesn't have a set type.
+          at: GDScript::reload (res://scenes/game/camera_controller.gd:53)
+          GDScript backtrace (most recent call first):
+              [0] _setup_camera (res://scenes/game/game_world.gd:77)
+              [1] _ready (res://scenes/game/game_world.gd:11)
+ERROR: Failed to load script "res://scenes/game/camera_controller.gd" with error "Parse error".
+   at: load (modules/gdscript/gdscript.cpp:2907)
+   GDScript backtrace (most recent call first):
+       [0] _setup_camera (res://scenes/game/game_world.gd:77)
+       [1] _ready (res://scenes/game/game_world.gd:11)
+SCRIPT ERROR: Invalid call. Nonexistent function 'new' in base 'GDScript'.
+          at: _setup_camera (res://scenes/game/game_world.gd:81)
+          GDScript backtrace (most recent call first):
+              [0] _setup_camera (res://scenes/game/game_world.gd:81)
+              [1] _ready (res://scenes/game/game_world.gd:11)
+SCRIPT ERROR: Invalid call. Nonexistent function 'enter_build_mode' in base 'Nil'.
+          at: _on_build_hub (res://scenes/game/hud/hud.gd:236)
+          GDScript backtrace (most recent call first):
+              [0] _on_build_hub (res://scenes/game/hud/hud.gd:236)
+SCRIPT ERROR: Invalid assignment of property or key 'selected_slope_difficulty' with value of type 'int' on a base object of type 'Nil'.
+          at: _on_slope_difficulty_selected (res://scenes/game/hud/hud.gd:256)
+          GDScript backtrace (most recent call first):
+              [0] _on_slope_difficulty_selected (res://scenes/game/hud/hud.gd:256)
+SCRIPT ERROR: Invalid call. Nonexistent function 'exit_build_mode' in base 'Nil'.
+          at: _on_build_cancel (res://scenes/game/hud/hud.gd:252)
+          GDScript backtrace (most recent call first):
+              [0] _on_build_cancel (res://scenes/game/hud/hud.gd:252)
+SCRIPT ERROR: Invalid access to property or key 'all_slopes' on a base object of type 'Nil'.
+          at: _on_day_changed (res://scripts/autoload/economy_manager.gd:79)
+          GDScript backtrace (most recent call first):
+              [0] _on_day_changed (res://scripts/autoload/economy_manager.gd:79)
+              [1] _advance_day (res://scripts/autoload/time_manager.gd:71)
+              [2] _process (res://scripts/autoload/time_manager.gd:60)
+SCRIPT ERROR: Invalid call. Nonexistent function 'exit_build_mode' in base 'Nil'.
+          at: _on_build_cancel (res://scenes/game/hud/hud.gd:252)
+          GDScript backtrace (most recent call first):
+              [0] _on_build_cancel (res://scenes/game/hud/hud.gd:252)
+SCRIPT ERROR: Invalid access to property or key 'all_slopes' on a base object of type 'Nil'.
+          at: _on_day_changed (res://scripts/autoload/economy_manager.gd:79)
+          GDScript backtrace (most recent call first):
+              [0] _on_day_changed (res://scripts/autoload/economy_manager.gd:79)
+              [1] _advance_day (res://scripts/autoload/time_manager.gd:71)
+              [2] _process (res://scripts/autoload/time_manager.gd:60)
+SCRIPT ERROR: Invalid call. Nonexistent function 'unregister_hub' in base 'Nil'.
+          at: Hub._exit_tree (res://scenes/infrastructure/hub.gd:28)
+          GDScript backtrace (most recent call first):
+              [0] _exit_tree (res://scenes/infrastructure/hub.gd:28)
+WARNING: 1 RID of type "CanvasItem" was leaked.
+     at: _free_rids (servers/rendering/renderer_canvas_cull.cpp:2690)
+ERROR: 1 shaders of type CanvasShaderRD were never freed
+   at: ~ShaderRD (servers/rendering/renderer_rd/shader_rd.cpp:1056)
+ERROR: 1 RID allocations of type 'N10RendererRD15MaterialStorage8MaterialE' were leaked at exit.
+ERROR: 1 RID allocations of type 'N10RendererRD15MaterialStorage6ShaderE' were leaked at exit.
+WARNING: ObjectDB instances leaked at exit (run with --verbose for details).
+     at: cleanup (core/object/object.cpp:2641)
