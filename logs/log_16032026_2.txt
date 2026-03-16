@@ -1,0 +1,23 @@
+SCRIPT ERROR: Parse Error: Cannot infer the type of "delta" variable because the value doesn't have a set type.
+          at: GDScript::reload (res://scenes/game/camera_controller.gd:54)
+          GDScript backtrace (most recent call first):
+              [0] _setup_camera (res://scenes/game/game_world.gd:77)
+              [1] _ready (res://scenes/game/game_world.gd:11)
+ERROR: Failed to load script "res://scenes/game/camera_controller.gd" with error "Parse error".
+   at: load (modules/gdscript/gdscript.cpp:2907)
+   GDScript backtrace (most recent call first):
+       [0] _setup_camera (res://scenes/game/game_world.gd:77)
+       [1] _ready (res://scenes/game/game_world.gd:11)
+SCRIPT ERROR: Invalid call. Nonexistent function 'new' in base 'GDScript'.
+          at: _setup_camera (res://scenes/game/game_world.gd:81)
+          GDScript backtrace (most recent call first):
+              [0] _setup_camera (res://scenes/game/game_world.gd:81)
+              [1] _ready (res://scenes/game/game_world.gd:11)
+WARNING: 1 RID of type "CanvasItem" was leaked.
+     at: _free_rids (servers/rendering/renderer_canvas_cull.cpp:2690)
+ERROR: 1 shaders of type CanvasShaderRD were never freed
+   at: ~ShaderRD (servers/rendering/renderer_rd/shader_rd.cpp:1056)
+ERROR: 1 RID allocations of type 'N10RendererRD15MaterialStorage8MaterialE' were leaked at exit.
+ERROR: 1 RID allocations of type 'N10RendererRD15MaterialStorage6ShaderE' were leaked at exit.
+WARNING: ObjectDB instances leaked at exit (run with --verbose for details).
+     at: cleanup (core/object/object.cpp:2641)
